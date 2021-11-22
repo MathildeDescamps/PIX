@@ -1,4 +1,4 @@
-import './App.css';
+import './style/App.css';
 import Logo from './components/Logo';
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <div className="React app">
       <div id="logo-wrapper">
         <Logo />
-    </div>
+      </div>
     </div>
   );
 }

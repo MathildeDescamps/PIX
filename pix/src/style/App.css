@@ -1,0 +1,141 @@
+body {
+  background-color: #FFEE0C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  z-index: 12;
+}
+body #logo-wrapper {
+  opacity: 0;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* width: 4788px;
+  height: 2160; */
+  overflow: hidden;
+  transform: scale(0.2);
+}
+body #logo-wrapper img {
+  filter: sepia(100%) hue-rotate(140deg) brightness(100%) saturate(250%);
+  width: 100%;
+  height: 100%;
+}
+body #logo-wrapper .p-letter {
+  overflow: hidden;
+  position: relative;
+  margin-right: 150px;
+  z-index: 10;
+}
+body #logo-wrapper .p-letter .round-part {
+  display: grid;
+  grid-gap: 0;
+  row-gap: 0;
+  position: relative;
+  z-index: 8;
+  border-top-right-radius: 680px;
+  border-bottom-right-radius: 680px;
+  overflow: hidden;
+  grid-template-columns: repeat(14, 126px);
+  grid-template-rows: repeat(12, 120px);
+  max-height: 1380px;
+  max-width: 1660px;
+}
+body #logo-wrapper .p-letter .round-part img {
+  height: 100%;
+  width: 100%;
+}
+body #logo-wrapper .p-letter .straight-part {
+  display: grid;
+  grid-gap: 0;
+  row-gap: 0;
+  grid-template-columns: repeat(6, 126px);
+  grid-template-rows: repeat(7, 120px);
+  position: relative;
+  z-index: 8;
+  max-width: 693px;
+  overflow: hidden;
+  top: -60px;
+}
+body #logo-wrapper .p-letter .straight-part img {
+  height: 100%;
+  width: 100%;
+}
+body #logo-wrapper .i-letter {
+  position: relative;
+  margin-right: 150px;
+  z-index: 10;
+}
+body #logo-wrapper .i-letter .point-part {
+  display: grid;
+  grid-gap: 0;
+  row-gap: 0;
+  grid-template-columns: repeat(6, 126px);
+  grid-template-rows: repeat(6, 120px);
+  overflow: hidden;
+}
+body #logo-wrapper .i-letter .point-part img {
+  height: 100%;
+  width: 100%;
+}
+body #logo-wrapper .i-letter .straight-part {
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-gap: 0;
+  row-gap: 0;
+  grid-template-columns: repeat(6, 126px);
+  grid-template-rows: repeat(11, 120px);
+  overflow: hidden;
+}
+body #logo-wrapper .i-letter .straight-part img {
+  height: 100%;
+  width: 100%;
+}
+body #logo-wrapper .x-letter {
+  position: relative;
+  display: flex;
+  z-index: 10;
+}
+body #logo-wrapper .x-letter .col .square {
+  position: relative;
+  z-index: 8;
+  display: grid;
+  grid-gap: 0;
+  row-gap: 0;
+  grid-template-columns: repeat(6, 126px);
+  grid-template-rows: repeat(6, 120px);
+  overflow: hidden;
+}
+body #logo-wrapper .x-letter .col .square img {
+  height: 100%;
+  width: 100%;
+}
+body #logo-wrapper .x-letter .col .square.hidden {
+  background-color: transparent;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=App.css.map */
