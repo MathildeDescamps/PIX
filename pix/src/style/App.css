@@ -24,6 +24,7 @@ body #logo-wrapper {
   height: 2160; */
   overflow: hidden;
   transform: scale(0.2);
+  max-height: 2160px;
 }
 body #logo-wrapper img {
   filter: sepia(100%) hue-rotate(140deg) brightness(100%) saturate(250%);
@@ -42,8 +43,8 @@ body #logo-wrapper .p-letter .round-part {
   row-gap: 0;
   position: relative;
   z-index: 8;
-  border-top-right-radius: 680px;
-  border-bottom-right-radius: 680px;
+  border-top-right-radius: 605px;
+  border-bottom-right-radius: 605px;
   overflow: hidden;
   grid-template-columns: repeat(14, 126px);
   grid-template-rows: repeat(12, 120px);
@@ -96,6 +97,7 @@ body #logo-wrapper .i-letter .straight-part {
   grid-template-columns: repeat(6, 126px);
   grid-template-rows: repeat(11, 120px);
   overflow: hidden;
+  max-height: 1260px;
 }
 body #logo-wrapper .i-letter .straight-part img {
   height: 100%;
@@ -121,6 +123,9 @@ body #logo-wrapper .x-letter .col .square img {
   width: 100%;
 }
 body #logo-wrapper .x-letter .col .square.hidden {
+  display: block;
+  width: 756px;
+  height: 720px;
   background-color: transparent;
 }
 @-webkit-keyframes fadeIn {
