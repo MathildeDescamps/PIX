@@ -1,5 +1,5 @@
 body {
-    background-color: #FFEE0C;
+    background-color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,16 +9,13 @@ body {
     svg {
         position: absolute;
         top: -1332px;
-        left: -1920px;
+        left: -1958px;
         transform: scale(0.2);
         width: 285%;
+        height: auto;
+        fill: none;
     }
     #logo-wrapper {
-        >div {
-            z-index: 2;
-            opacity: 0.5;
-        }
-        opacity: 0;
         animation-name: fadeIn;
         animation-duration: 3s;
         animation-fill-mode: forwards;
@@ -50,7 +47,7 @@ body {
                 border-top-right-radius: 635px;
                 border-bottom-right-radius: 635px;
                 overflow: hidden;
-                grid-template-columns: repeat(15, 126px);
+                grid-template-columns: repeat(14, 126px);
                 grid-template-rows: repeat(10, 126px);
                 //max-height: 1380px;
                 max-height: 1380px;
@@ -79,7 +76,7 @@ body {
         }
         .i-letter {
             position: relative;
-            margin-right: 170px;
+            margin-right: 196px;
             z-index: 10;
             .point-part {
                 display: grid;
@@ -101,7 +98,7 @@ body {
                 display: grid;
                 grid-gap: 0;
                 row-gap: 0;grid-template-columns: repeat(6, 126px);
-                grid-template-rows: repeat(11, 126px);
+                grid-template-rows: repeat(10, 126px);
                 overflow: hidden;
                 //max-height: 1386px;
                 max-height: 1238px;
@@ -126,7 +123,8 @@ body {
                     grid-template-columns: repeat(6, 126px);
                     grid-template-rows: repeat(6, 126px);
                     overflow: hidden;
-                    max-width: 600px;
+                    max-width: 718px;
+                    max-height: 720px;
                     img {
                         height: 100%;
                         width: 100%;
@@ -134,8 +132,8 @@ body {
                 }
                 .square.hidden {
                     display: block;
-                    width: 600px;
-                    height: 756px;
+                    width: 718px;
+                    height: 720px;
                     background-color: transparent;
                 }
             }
