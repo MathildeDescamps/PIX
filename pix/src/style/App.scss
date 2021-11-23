@@ -6,7 +6,18 @@ body {
     text-align: center;
     min-height: 100vh;
     z-index: 12;
+    svg {
+        position: absolute;
+        top: -1332px;
+        left: -1920px;
+        transform: scale(0.2);
+        width: 285%;
+    }
     #logo-wrapper {
+        >div {
+            z-index: 2;
+            opacity: 0.5;
+        }
         opacity: 0;
         animation-name: fadeIn;
         animation-duration: 3s;
@@ -19,7 +30,7 @@ body {
         height: 2160; */
         overflow: hidden;
         transform: scale(0.2);
-        max-height: 2160px;
+        max-height: 2155px;
         img {
             filter: sepia(100%) hue-rotate(140deg) brightness(100%) saturate(250%);
             width: 100%;
@@ -28,7 +39,7 @@ body {
         .p-letter {
             overflow: hidden;
             position: relative;
-            margin-right: 150px;
+            margin-right: 186px;
             z-index: 10;
             .round-part {
                 display: grid;
@@ -36,14 +47,14 @@ body {
                 row-gap: 0;
                 position: relative;
                 z-index: 8;
-                border-top-right-radius: 605px;
-                border-bottom-right-radius: 605px;
+                border-top-right-radius: 635px;
+                border-bottom-right-radius: 635px;
                 overflow: hidden;
-                grid-template-columns: repeat(14, 126px);
-                grid-template-rows: repeat(12, 120px);
+                grid-template-columns: repeat(15, 126px);
+                grid-template-rows: repeat(10, 126px);
                 //max-height: 1380px;
                 max-height: 1380px;
-                max-width: 1660px;
+                max-width: 1700px;
                 img {
                     height: 100%;
                     width: 100%;
@@ -54,13 +65,12 @@ body {
                 grid-gap: 0;
                 row-gap: 0;
                 grid-template-columns: repeat(6, 126px);
-                grid-template-rows: repeat(7, 120px);
+                grid-template-rows: repeat(6, 126px);
                 position: relative;
                 z-index: 8;
-                //max-height: 756px;
-                max-width: 693px;
+                max-width: 715px;
+                max-height: 780px;
                 overflow: hidden;
-                top: -60px;
                 img {
                     height: 100%;
                     width: 100%;
@@ -69,15 +79,17 @@ body {
         }
         .i-letter {
             position: relative;
-            margin-right: 150px;
+            margin-right: 170px;
             z-index: 10;
             .point-part {
                 display: grid;
                 grid-gap: 0;
                 row-gap: 0;
                 grid-template-columns: repeat(6, 126px);
-                grid-template-rows: repeat(6, 120px);
+                grid-template-rows: repeat(6, 126px);
                 overflow: hidden;
+                max-width: 720px;
+                max-height: 720px;
                 img {
                     height: 100%;
                     width: 100%;
@@ -89,10 +101,11 @@ body {
                 display: grid;
                 grid-gap: 0;
                 row-gap: 0;grid-template-columns: repeat(6, 126px);
-                grid-template-rows: repeat(11, 120px);
+                grid-template-rows: repeat(11, 126px);
                 overflow: hidden;
                 //max-height: 1386px;
-                max-height: 1260px;
+                max-height: 1238px;
+                max-width: 720px;
                 img {
                     height: 100%;
                     width: 100%;
@@ -111,8 +124,9 @@ body {
                     grid-gap: 0;
                     row-gap: 0;
                     grid-template-columns: repeat(6, 126px);
-                    grid-template-rows: repeat(6, 120px);
+                    grid-template-rows: repeat(6, 126px);
                     overflow: hidden;
+                    max-width: 600px;
                     img {
                         height: 100%;
                         width: 100%;
@@ -120,8 +134,8 @@ body {
                 }
                 .square.hidden {
                     display: block;
-                    width: 756px;
-                    height: 720px;
+                    width: 600px;
+                    height: 756px;
                     background-color: transparent;
                 }
             }
