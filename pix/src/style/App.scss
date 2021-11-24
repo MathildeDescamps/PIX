@@ -5,146 +5,158 @@ body {
     text-align: center;
     min-height: 100vh;
     z-index: 12;
-    svg {
-        position: absolute;
-        top: -1332px;
-        left: -1958px;
-        transform: scale(0.2);
-        width: 285%;
-        height: auto;
-        fill: none;
-    }
-    #logo-wrapper {
-        animation-name: fadeIn;
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
-        animation-delay: 1s;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        /* width: 4788px;
-        height: 2160; */
-        overflow: hidden;
-        transform: scale(0.2);
-        max-height: 2155px;
-        img {
-            filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    #root {
+        width: 100%;
+        height: 100vh;
+        .react-app {
+            transform: scale(0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
             width: 100%;
             height: 100%;
-        }
-        .p-letter {
-            overflow: hidden;
-            position: relative;
-            margin-right: 186px;
-            z-index: 10;
-            .round-part {
-                display: grid;
-                grid-gap: 0;
-                row-gap: 0;
-                position: relative;
-                z-index: 8;
-                border-top-right-radius: 635px;
-                border-bottom-right-radius: 635px;
-                overflow: hidden;
-                grid-template-columns: repeat(14, 126px);
-                grid-template-rows: repeat(10, 126px);
-                //max-height: 1380px;
-                max-height: 1380px;
-                max-width: 1700px;
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
-            }
-            .straight-part {
-                display: grid;
-                grid-gap: 0;
-                row-gap: 0;
-                grid-template-columns: repeat(6, 126px);
-                grid-template-rows: repeat(6, 126px);
-                position: relative;
-                z-index: 8;
-                max-width: 715px;
-                max-height: 780px;
-                overflow: hidden;
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
-            }
-        }
-        .i-letter {
-            position: relative;
-            margin-right: 196px;
-            z-index: 10;
-            .point-part {
-                display: grid;
-                grid-gap: 0;
-                row-gap: 0;
-                grid-template-columns: repeat(6, 126px);
-                grid-template-rows: repeat(6, 126px);
-                overflow: hidden;
-                max-width: 720px;
-                max-height: 720px;
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
-            }
-            .straight-part {
+            svg {
                 position: absolute;
-                bottom: 0;
-                display: grid;
-                grid-gap: 0;
-                row-gap: 0;grid-template-columns: repeat(6, 126px);
-                grid-template-rows: repeat(10, 126px);
-                overflow: hidden;
-                //max-height: 1386px;
-                max-height: 1238px;
-                max-width: 720px;
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
+                top: -1332px;
+                left: -1958px;
+                width: 285%;
+                height: auto;
+                fill: none;
             }
-        }
-        .x-letter {
-            position: relative;
-            display: flex;
-            z-index: 10;
-            .col {
-                .square {
-                    position: relative;
-                    z-index: 8;
-                    display: grid;
-                    grid-gap: 0;
-                    row-gap: 0;
-                    grid-template-columns: repeat(6, 126px);
-                    grid-template-rows: repeat(6, 126px);
+            #logo-wrapper {
+                animation-name: fadeIn;
+                animation-duration: 3s;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+                display: flex;
+                justify-content: center;
+                /* width: 4788px;
+                height: 2160; */
+                img {
+                    filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
+                    width: 100%;
+                    height: 100%;
+                }
+                .p-letter {
                     overflow: hidden;
-                    max-width: 718px;
-                    max-height: 720px;
-                    img {
-                        height: 100%;
-                        width: 100%;
+                    position: relative;
+                    margin-right: 186px;
+                    z-index: 10;
+                    .round-part {
+                        display: grid;
+                        grid-gap: 0;
+                        row-gap: 0;
+                        position: relative;
+                        z-index: 8;
+                        border-top-right-radius: 635px;
+                        border-bottom-right-radius: 635px;
+                        overflow: hidden;
+                        grid-template-columns: repeat(14, 126px);
+                        grid-template-rows: repeat(10, 126px);
+                        //max-height: 1380px;
+                        max-height: 1380px;
+                        max-width: 1700px;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .straight-part {
+                        display: grid;
+                        grid-gap: 0;
+                        row-gap: 0;
+                        grid-template-columns: repeat(6, 126px);
+                        grid-template-rows: repeat(6, 126px);
+                        position: relative;
+                        z-index: 8;
+                        max-width: 715px;
+                        max-height: 780px;
+                        overflow: hidden;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
                     }
                 }
-                .square.hidden {
-                    display: block;
-                    width: 718px;
-                    height: 720px;
-                    background-color: transparent;
+                .i-letter {
+                    position: relative;
+                    margin-right: 196px;
+                    z-index: 10;
+                    .point-part {
+                        display: grid;
+                        grid-gap: 0;
+                        row-gap: 0;
+                        grid-template-columns: repeat(6, 126px);
+                        grid-template-rows: repeat(6, 126px);
+                        overflow: hidden;
+                        max-width: 720px;
+                        max-height: 720px;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                    .straight-part {
+                        position: absolute;
+                        bottom: 0;
+                        display: grid;
+                        grid-gap: 0;
+                        row-gap: 0;grid-template-columns: repeat(6, 126px);
+                        grid-template-rows: repeat(10, 126px);
+                        overflow: hidden;
+                        //max-height: 1386px;
+                        max-height: 1238px;
+                        max-width: 720px;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+                .x-letter {
+                    position: relative;
+                    display: flex;
+                    z-index: 10;
+                    .col {
+                        .square {
+                            position: relative;
+                            z-index: 8;
+                            display: grid;
+                            grid-gap: 0;
+                            row-gap: 0;
+                            grid-template-columns: repeat(6, 126px);
+                            grid-template-rows: repeat(6, 126px);
+                            overflow: hidden;
+                            max-width: 718px;
+                            max-height: 720px;
+                            img {
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+                        .square.hidden {
+                            display: block;
+                            width: 718px;
+                            height: 720px;
+                            background-color: transparent;
+                        }
+                    }
                 }
             }
-        }
-    }
-    @keyframes fadeIn {
-        from {
-        opacity: 0;
-        }
-        
-        to {
-        opacity: 1;
+            @keyframes fadeIn {
+                from {
+                opacity: 0;
+                }
+                
+                to {
+                opacity: 1;
+                }
+            }
         }
     }
 }
