@@ -30,15 +30,7 @@ body #root .react-app {
   width: 100%;
   height: 100%;
 }
-body #root .react-app svg {
-  position: absolute;
-  top: -1332px;
-  left: -1958px;
-  width: 285%;
-  display: none;
-  height: auto;
-  fill: none;
-}
+
 body #root .react-app #logo-wrapper {
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;

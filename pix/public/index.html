@@ -26,7 +26,8 @@
     -->
     <title>PIX</title>
   </head>
-  <body style="background-image: url('bg_pix.jpg'); z-index: 999999 ">
+  <body>
+  <img id="pixAnim" src="anim/00000.webp" data-img="0" style="position: absolute" alt="">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +40,59 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      /**
+       * Animation
+       */
+      setInterval(function(){
+        var img         = document.getElementById("pixAnim");
+        var i           = img.dataset.img;
+        var nextI       = (i >= 125) ? 0 : (parseInt(i)+1) ;
+        img.dataset.img = nextI;
+        img.src         = 'anim/'+String(nextI).padStart(5,'0')+'.webp';
+      }, 25)
+
+      function fadeIn(el, time) {
+        el.style.opacity = 0;
+        var last = +new Date();
+        var tick = function() {
+          el.style.opacity = +el.style.opacity + (new Date() - last) / time;
+          last = +new Date();
+
+          if (+el.style.opacity < 1) {
+            (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16);
+          }
+
+        };
+        tick();
+      }
+
+      window.onload = function() {
+        var imgs = document.querySelectorAll('.imgPix');
+
+        imgs.forEach(i => {
+               if(!i.src.includes('default.webp')){
+              // fadeIn(i, Math.floor(Math.random() * (5000 - 1000 + 1) + 200))
+              setTimeout(() => {
+                fadeIn(i, 1000)
+                i.style.borderImage = '9px 12px 14px 2px #81c6dc'
+                i.style.border = '5px solid'
+                i.style.borderStyle = 'inset'
+             }, Math.floor(Math.random() * (5000 - 1000 + 1) + 1000))
+            }
+              var observer = new MutationObserver((changes) => {
+                  changes.forEach(change => {
+                    if(change.attributeName.includes('src')){
+                      setTimeout(() => {
+                        fadeIn(i, 1000)
+                      }, Math.floor(Math.random() * (5000 - 1000 + 1) + 1000))
+                    }
+                  });
+              });
+          observer.observe(i, {attributes : true});
+        } )
+      }
+
+    </script>
   </body>
 </html>
