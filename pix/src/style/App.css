@@ -34,10 +34,9 @@ body #root .react-app #logo-wrapper {
           animation-delay: 1s;
   display: flex;
   justify-content: center;
-}
-body #root .react-app #logo-wrapper .imgPix {
-  -webkit-animation: scale 1s step-end infinite;
-          animation: scale 1s step-end infinite;
+  /*  .imgPix {
+       animation: scale 1s step-end infinite;
+   } */
 }
 body #root .react-app #logo-wrapper img {
   filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
@@ -155,6 +154,48 @@ body #root .react-app .fadeIn {
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+}
+body #root .react-app .imgWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #root .react-app .imgWrapper:before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fff, #12F6EF, #fff, #12F6EF, #fff, #12F6EF, #fff, #12F6EF, #fff);
+  background-size: 400%;
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  z-index: -1;
+  -webkit-animation: glower 20s linear infinite;
+          animation: glower 20s linear infinite;
+}
+@-webkit-keyframes glower {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+@keyframes glower {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 @-webkit-keyframes borderBlink {
   from, to {

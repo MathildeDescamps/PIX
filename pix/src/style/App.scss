@@ -27,9 +27,9 @@ body {
                 animation-delay: 1s;
                 display: flex;
                 justify-content: center;
-                .imgPix {
+               /*  .imgPix {
                     animation: scale 1s step-end infinite;
-                }
+                } */
                 img {
                     filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
                     width: 100%;
@@ -150,6 +150,40 @@ body {
                 animation-fill-mode: forwards;
                 -webkit-animation-delay: 1s;
                 animation-delay: 1s;
+              }
+
+            .imgWrapper {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .imgWrapper:before {
+                content: '';
+                position: absolute;
+                left: -2px;
+                top: -2px;
+                background: linear-gradient(45deg, #fff, #12F6EF, #fff, #12F6EF, #fff, #12F6EF, #fff, #12F6EF, #fff);
+                background-size: 400%;
+                width: calc(100% + 5px);
+                height: calc(100% + 5px);
+                z-index: -1;
+                animation: glower 20s linear infinite;
+            }
+            @keyframes glower {
+                0% {
+                  background-position: 0 0;
+                }
+                
+                50% {
+                  background-position: 400% 0;
+                }
+                
+                100% {
+                  background-position: 0 0;
+                }
               }
             @keyframes borderBlink {
                 from, to {    
