@@ -32,7 +32,13 @@ for(var i=0 ; i < 212; i++ ) {
         catch (err) {return 'default.webp'}
     }
     var src = srcPhoto(i);
-    var elm =  <div className="img-wrapper" style={ src !== 'default.webp' ? {zIndex: '4', border: '14px solid #12F6EF', boxShadow: 'inset 0px 0px 30px 30px rgba(0,0,0,0.9)', height: '100%', width:'100%'} : {height: '100%', width:'100%'}}><img className={'imgPix'} style={ src !== 'default.webp' ? { opacity: '0', position: 'relative', zIndex: '4'} :{} } src={src} alt={""}  key={i} /></div>
+    var elm =  
+        <div style={ {maxWidth: '190px', maxHeight: '190px', overflow: 'hidden'}}>
+            <div style={ (src !== 'default.webp')? {overflow: 'initial', boxShadow: 'inset 0 0 10px #12F6EF', animation: 'borderBlink 2s step-end infinite', backgroundColor: 'transparent'} : {} }>
+                <img className={'imgPix'} style={ (src !== 'default.webp')? { opacity: '0'} :{} } src={src} alt={""}  key={i} />
+            </div>
+        </div>
+    ;
     if(i < 72)                   pix.P.rounded.push(elm);
     else if(i >= 72 && i < 88)   pix.P.straight.push(elm);
     else if(i >= 88 && i < 104)  pix.I.dot.push(elm);
