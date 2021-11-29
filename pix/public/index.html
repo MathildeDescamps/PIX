@@ -44,18 +44,19 @@
       /*
         Animation
        */
-       setInterval(animOnce(), 60000)
+       setInterval(() => animOnce(), 60000)
 
-       function animOnce(){
-         var animation = setInterval( function(){
-           var img         = document.getElementById("pixAnim");
-           var i           = img.dataset.img;
-           var nextI       = (i >= 125) ? 0 : (parseInt(i)+1) ;
-           img.dataset.img = nextI;
-           img.src         = 'anim/'+String(nextI).padStart(5,'0')+'.webp';
-           if(nextI === 97) clearInterval(animation)
-         } ,50)
-       }
+      function animOnce(){
+        var animation = setInterval( function(){
+          var img         = document.getElementById("pixAnim");
+          var i           = img.dataset.img;
+          var nextI       = (i >= 125) ? 0 : (parseInt(i)+1) ;
+          img.dataset.img = nextI;
+          img.src         = 'anim/'+String(nextI).padStart(5,'0')+'.webp';
+          if(nextI === 97) clearInterval(animation)
+        } ,50)
+      }
+      animOnce()
 
       function fadeIn(el, time) {
         el.style.opacity = 0;
