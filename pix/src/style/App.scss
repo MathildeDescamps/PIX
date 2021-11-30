@@ -152,7 +152,8 @@ body {
                 animation-delay: 1s;
               }
 
-            .imgWrapper {
+            .imgWrapper,
+            .wrapper-glow {
                 height: 100%;
                 width: 100%;
                 display: flex;
@@ -160,7 +161,7 @@ body {
                 align-items: center;
             }
 
-            .imgWrapper:before {
+            .wrapper-glow:before {
                 content: '';
                 position: absolute;
                 left: -2px;
@@ -170,8 +171,9 @@ body {
                 width: calc(100% + 5px);
                 height: calc(100% + 5px);
                 z-index: -1;
-                animation: glower 20s linear infinite;
+                animation: glower 20s  infinite;
             }
+
             @keyframes glower {
                 0% {
                   background-position: 0 0;
@@ -184,14 +186,6 @@ body {
                 100% {
                   background-position: 0 0;
                 }
-              }
-            @keyframes borderBlink {
-                from, to {    
-                    border-color: #12F6EF;
-                }    
-                50% {    
-                    border-color: transparent;    
-                }    
             }
             @keyframes scale {
                 from, to {    
@@ -200,6 +194,15 @@ body {
                 50% {    
                     transform: scale(1.4);    
                 }    
+            }
+
+            @keyframes colorSwitch {
+                from, to {
+                    filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%)!important;
+                }
+                50% {
+                    filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%)!important;
+                }
             }
         }
     }

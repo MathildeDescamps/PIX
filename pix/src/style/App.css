@@ -155,14 +155,15 @@ body #root .react-app .fadeIn {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
-body #root .react-app .imgWrapper {
+body #root .react-app .imgWrapper,
+body #root .react-app .wrapper-glow {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body #root .react-app .imgWrapper:before {
+body #root .react-app .wrapper-glow:before {
   content: "";
   position: absolute;
   left: -2px;
@@ -172,8 +173,8 @@ body #root .react-app .imgWrapper:before {
   width: calc(100% + 5px);
   height: calc(100% + 5px);
   z-index: -1;
-  -webkit-animation: glower 20s linear infinite;
-          animation: glower 20s linear infinite;
+  -webkit-animation: glower 20s infinite;
+          animation: glower 20s infinite;
 }
 @-webkit-keyframes glower {
   0% {
@@ -197,22 +198,6 @@ body #root .react-app .imgWrapper:before {
     background-position: 0 0;
   }
 }
-@-webkit-keyframes borderBlink {
-  from, to {
-    border-color: #12F6EF;
-  }
-  50% {
-    border-color: transparent;
-  }
-}
-@keyframes borderBlink {
-  from, to {
-    border-color: #12F6EF;
-  }
-  50% {
-    border-color: transparent;
-  }
-}
 @-webkit-keyframes scale {
   from, to {
     transform: scale(1);
@@ -227,5 +212,21 @@ body #root .react-app .imgWrapper:before {
   }
   50% {
     transform: scale(1.4);
+  }
+}
+@-webkit-keyframes colorSwitch {
+  from, to {
+    filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%) !important;
+  }
+  50% {
+    filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%) !important;
+  }
+}
+@keyframes colorSwitch {
+  from, to {
+    filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%) !important;
+  }
+  50% {
+    filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%) !important;
   }
 }/*# sourceMappingURL=App.css.map */

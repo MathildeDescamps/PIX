@@ -34,7 +34,7 @@ for(var i=0 ; i < 212; i++ ) {
     var src = srcPhoto(i);
     var elm =  
         <div style={ {maxWidth: '190px', maxHeight: '190px', overflow: 'hidden', position:'relative'}}>
-            <div className={(src !== 'default.webp') ? 'imgWrapper' : ''} style={ (src !== 'default.webp')? {overflow: 'initial', boxShadow: 'inset 0 0 10px #12F6EF', animation: 'borderBlink 2s step-end infinite', backgroundColor: 'transparent'/* , border: '14px solid #12F6EF' */} : {} }>
+            <div className={(src !== 'default.webp') ? 'imgWrapper' : ''} style={ (src !== 'default.webp')? {overflow: 'initial', backgroundColor: 'transparent'/* , border: '14px solid #12F6EF' */} : {} }>
                 <img className={'imgPix'} style={ (src !== 'default.webp')? { opacity: '0', maxWidth: '85%', maxHeight: '85%'} :{} } src={src} alt={""}  key={i} />
             </div>
         </div>

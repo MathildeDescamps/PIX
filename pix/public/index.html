@@ -91,6 +91,18 @@
                     if(change.attributeName.includes('src')){
                       setTimeout(() => {
                         fadeIn(i, 1000)
+                        setTimeout(() => {
+                          var parent = i.parentElement;
+                          console.log('the parent', parent);
+                          if(parent.classList.contains('imgWrapper')) {
+                            parent.classList.add('wrapper-glow');
+                            i.style.animation = "colorSwitch 10s infinite";
+                          }
+                        }, 1000)
+                        setTimeout(() => {
+                          parent.classList.remove('wrapper-glow');
+                        }, 720000)
+                        console.log('parent', parent);
                       }, Math.floor(Math.random() * (5000 - 1000 + 1) + 1000))
                     }
                   });
