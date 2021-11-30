@@ -159,12 +159,6 @@ body {
                 align-items: center;
             }
 
-            .wrapper-glow {
-                img {
-                    filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%)!important;
-                }
-            }
-
             .wrapper-glow::before {
                 content: '';
                 position: absolute;
@@ -178,9 +172,9 @@ body {
                 animation: glower 20s  infinite;
             }
 
-            /* .wrapper-glow .imgPix {
-                animation: colorSwitch 2s ease-in-out alternate infinite; 
-            } */
+            .wrapper-glow img {
+                animation: colorSwitch 2s ease-in-out alternate infinite;
+            }
 
             @keyframes glower {
                 0% {
@@ -204,14 +198,14 @@ body {
                 }    
             }
 
-            /* @keyframes colorSwitch {
-                from, to {
-                    filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%)!important;
+            @keyframes colorSwitch {
+                from {
+                    filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
                 }
-                50% {
-                    filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%)!important;
+                to {
+                    filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%);
                 }
-            } */
+            }
         }
     }
 }

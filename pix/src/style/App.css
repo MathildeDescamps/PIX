@@ -40,17 +40,6 @@ body #root .react-app {
   position: fixed;
   width: 100%;
   height: 100%;
-  /* .wrapper-glow .imgPix {
-                animation: colorSwitch 2s ease-in-out alternate infinite; 
-            } */
-  /* @keyframes colorSwitch {
-                from, to {
-                    filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%)!important;
-                }
-                50% {
-                    filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%)!important;
-                }
-            } */
 }
 
 body #root .react-app #logo-wrapper {
@@ -236,11 +225,6 @@ body #root .react-app .wrapper-glow {
           align-items: center;
 }
 
-body #root .react-app .wrapper-glow img {
-  -webkit-filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%) !important;
-          filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%) !important;
-}
-
 body #root .react-app .wrapper-glow::before {
   content: '';
   position: absolute;
@@ -253,6 +237,11 @@ body #root .react-app .wrapper-glow::before {
   z-index: -1;
   -webkit-animation: glower 20s  infinite;
           animation: glower 20s  infinite;
+}
+
+body #root .react-app .wrapper-glow img {
+  -webkit-animation: colorSwitch 2s ease-in-out alternate infinite;
+          animation: colorSwitch 2s ease-in-out alternate infinite;
 }
 
 @-webkit-keyframes glower {
@@ -298,6 +287,28 @@ body #root .react-app .wrapper-glow::before {
   50% {
     -webkit-transform: scale(1.4);
             transform: scale(1.4);
+  }
+}
+
+@-webkit-keyframes colorSwitch {
+  from {
+    -webkit-filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
+            filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
+  }
+  to {
+    -webkit-filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%);
+            filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%);
+  }
+}
+
+@keyframes colorSwitch {
+  from {
+    -webkit-filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
+            filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
+  }
+  to {
+    -webkit-filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%);
+            filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%);
   }
 }
 /*# sourceMappingURL=App.css.map */

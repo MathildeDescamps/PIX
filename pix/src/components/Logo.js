@@ -39,7 +39,7 @@ for(var i=0 ; i < 212; i++ ) {
             </div>
         </div>
     ;
-    if(i < 72)                   pix.P.rounded.push(elm);
+    if(i < 72) pix.P.rounded.push(elm);
     else if(i >= 72 && i < 88)   pix.P.straight.push(elm);
     else if(i >= 88 && i < 104)  pix.I.dot.push(elm);
     else if(i >= 104 && i < 132) pix.I.straight.push(elm);
