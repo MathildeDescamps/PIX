@@ -14,18 +14,7 @@ body #root {
   height: 100vh;
 }
 body #root .react-app {
-<<<<<<< HEAD
-<<<<<<< HEAD
   transform: scale(0.3);
-=======
-  -webkit-transform: scale(0.2);
-          transform: scale(0.2);
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> 49db72b64b1edf40269b15d0375e50fd9603a952
-=======
-  transform: scale(0.3);
->>>>>>> tester
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -210,35 +199,6 @@ body #root .react-app .wrapper-glow img {
     background-position: 0 0;
   }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-@-webkit-keyframes scale {
-  from, to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
-  }
-}
-
-@keyframes scale {
-  from, to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  50% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
-  }
-}
-
->>>>>>> 49db72b64b1edf40269b15d0375e50fd9603a952
-=======
->>>>>>> tester
 @-webkit-keyframes colorSwitch {
   from {
     filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
