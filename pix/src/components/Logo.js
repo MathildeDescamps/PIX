@@ -33,13 +33,13 @@ for(var i=0 ; i < 212; i++ ) {
     }
     var src = srcPhoto(i);
     var elm =  
-        <div style={ {maxWidth: '190px', maxHeight: '190px', overflow: 'hidden', position:'relative'}}>
-            <div className={(src !== 'default.webp') ? 'imgWrapper' : ''} style={ (src !== 'default.webp')? {overflow: 'initial', backgroundColor: 'transparent'/* , border: '14px solid #12F6EF' */} : {} }>
-                <img className={'imgPix'} style={ (src !== 'default.webp')? { opacity: '0', maxWidth: '85%', maxHeight: '85%'} :{} } src={src} alt={""}  key={i} />
+        <div style={ {maxWidth: '190px', maxHeight: '190px', overflow: 'hidden', position:'relative'}} key={i}>
+            <div className={(src !== 'default.webp') ? 'imgWrapper' : ''} style={ (src !== 'default.webp')? {overflow: 'initial', backgroundColor: 'transparent'} : {} }>
+                <img className={'imgPix'} style={ (src !== 'default.webp')? { opacity: '0', maxWidth: '85%', maxHeight: '85%'} :{} } src={src} alt={""} />
             </div>
         </div>
     ;
-    if(i < 72)                   pix.P.rounded.push(elm);
+    if(i < 72) pix.P.rounded.push(elm);
     else if(i >= 72 && i < 88)   pix.P.straight.push(elm);
     else if(i >= 88 && i < 104)  pix.I.dot.push(elm);
     else if(i >= 104 && i < 132) pix.I.straight.push(elm);
