@@ -12,7 +12,7 @@ body {
         width: 100%;
         height: 100vh;
         .react-app {
-            transform: scale(0.2);
+            transform: scale(0.3);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -187,15 +187,7 @@ body {
                   background-position: 0 0;
                 }
             }
-            @keyframes scale {
-                from, to {    
-                    transform: scale(1);
-                }    
-                50% {    
-                    transform: scale(1.4);    
-                }    
-            }
-
+            
             @keyframes colorSwitch {
                 from, to {
                     filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%)!important;

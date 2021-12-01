@@ -14,7 +14,7 @@ body #root {
   height: 100vh;
 }
 body #root .react-app {
-  transform: scale(0.2);
+  transform: scale(0.3);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,22 +196,6 @@ body #root .react-app .wrapper-glow:before {
   }
   100% {
     background-position: 0 0;
-  }
-}
-@-webkit-keyframes scale {
-  from, to {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.4);
-  }
-}
-@keyframes scale {
-  from, to {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.4);
   }
 }
 @-webkit-keyframes colorSwitch {
