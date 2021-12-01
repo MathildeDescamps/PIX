@@ -1,13 +1,7 @@
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   min-height: 100vh;
   z-index: 12;
@@ -15,13 +9,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 body #root {
   width: 100%;
   height: 100vh;
 }
-
 body #root .react-app {
+<<<<<<< HEAD
 <<<<<<< HEAD
   transform: scale(0.3);
 =======
@@ -30,22 +23,17 @@ body #root .react-app {
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> 49db72b64b1edf40269b15d0375e50fd9603a952
+=======
+  transform: scale(0.3);
+>>>>>>> tester
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   width: 100%;
   height: 100%;
 }
-
 body #root .react-app #logo-wrapper {
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
@@ -55,30 +43,21 @@ body #root .react-app #logo-wrapper {
           animation-fill-mode: forwards;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 body #root .react-app #logo-wrapper img {
-  -webkit-filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
-          filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
+  filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
   width: 100%;
   height: 100%;
 }
-
 body #root .react-app #logo-wrapper .p-letter {
   overflow: hidden;
   position: relative;
   margin-right: 186px;
   z-index: 10;
 }
-
 body #root .react-app #logo-wrapper .p-letter .round-part {
-  display: -ms-grid;
   display: grid;
   grid-gap: 0;
   row-gap: 0;
@@ -87,122 +66,93 @@ body #root .react-app #logo-wrapper .p-letter .round-part {
   border-top-right-radius: 635px;
   border-bottom-right-radius: 635px;
   overflow: hidden;
-  -ms-grid-columns: (190px)[9];
-      grid-template-columns: repeat(9, 190px);
-  -ms-grid-rows: (190px)[8];
-      grid-template-rows: repeat(8, 190px);
+  grid-template-columns: repeat(9, 190px);
+  grid-template-rows: repeat(8, 190px);
   max-height: 1520px;
   max-width: 1710px;
 }
-
 body #root .react-app #logo-wrapper .p-letter .round-part img {
   height: 100%;
   width: 100%;
 }
-
 body #root .react-app #logo-wrapper .p-letter .straight-part {
-  display: -ms-grid;
   display: grid;
   grid-gap: 0;
   row-gap: 0;
-  -ms-grid-columns: (190px)[4];
-      grid-template-columns: repeat(4, 190px);
-  -ms-grid-rows: (190px)[4];
-      grid-template-rows: repeat(4, 190px);
+  grid-template-columns: repeat(4, 190px);
+  grid-template-rows: repeat(4, 190px);
   position: relative;
   z-index: 8;
   max-width: 760px;
   max-height: 760px;
   overflow: hidden;
 }
-
 body #root .react-app #logo-wrapper .p-letter .straight-part img {
   height: 100%;
   width: 100%;
 }
-
 body #root .react-app #logo-wrapper .i-letter {
   position: relative;
   margin-right: 196px;
   z-index: 10;
 }
-
 body #root .react-app #logo-wrapper .i-letter .point-part {
-  display: -ms-grid;
   display: grid;
   grid-gap: 0;
   row-gap: 0;
-  -ms-grid-columns: (190px)[4];
-      grid-template-columns: repeat(4, 190px);
-  -ms-grid-rows: (190px)[4];
-      grid-template-rows: repeat(4, 190px);
+  grid-template-columns: repeat(4, 190px);
+  grid-template-rows: repeat(4, 190px);
   overflow: hidden;
   max-width: 760px;
   max-height: 760px;
 }
-
 body #root .react-app #logo-wrapper .i-letter .point-part img {
   height: 100%;
   width: 100%;
 }
-
 body #root .react-app #logo-wrapper .i-letter .straight-part {
   position: absolute;
   bottom: 0;
-  display: -ms-grid;
   display: grid;
   grid-gap: 0;
   row-gap: 0;
-  -ms-grid-columns: (190px)[4];
-      grid-template-columns: repeat(4, 190px);
-  -ms-grid-rows: (190px)[7];
-      grid-template-rows: repeat(7, 190px);
+  grid-template-columns: repeat(4, 190px);
+  grid-template-rows: repeat(7, 190px);
   overflow: hidden;
   max-height: 1330px;
   max-width: 760px;
 }
-
 body #root .react-app #logo-wrapper .i-letter .straight-part img {
   height: 100%;
   width: 100%;
 }
-
 body #root .react-app #logo-wrapper .x-letter {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   z-index: 10;
 }
-
 body #root .react-app #logo-wrapper .x-letter .col .square {
   position: relative;
   z-index: 8;
-  display: -ms-grid;
   display: grid;
   grid-gap: 0;
   row-gap: 0;
-  -ms-grid-columns: (190px)[4];
-      grid-template-columns: repeat(4, 190px);
-  -ms-grid-rows: (190px)[4];
-      grid-template-rows: repeat(4, 190px);
+  grid-template-columns: repeat(4, 190px);
+  grid-template-rows: repeat(4, 190px);
   overflow: hidden;
   max-width: 760px;
   max-height: 760px;
 }
-
 body #root .react-app #logo-wrapper .x-letter .col .square img {
   height: 100%;
   width: 100%;
 }
-
 body #root .react-app #logo-wrapper .x-letter .col .square.hidden {
   display: block;
   width: 760px;
   height: 760px;
   background-color: transparent;
 }
-
 body #root .react-app .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
@@ -213,24 +163,16 @@ body #root .react-app .fadeIn {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
-
 body #root .react-app .imgWrapper,
 body #root .react-app .wrapper-glow {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 body #root .react-app .wrapper-glow::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -2px;
   top: -2px;
@@ -239,15 +181,13 @@ body #root .react-app .wrapper-glow::before {
   width: calc(100% + 5px);
   height: calc(100% + 5px);
   z-index: -1;
-  -webkit-animation: glower 20s  infinite;
-          animation: glower 20s  infinite;
+  -webkit-animation: glower 20s infinite;
+          animation: glower 20s infinite;
 }
-
 body #root .react-app .wrapper-glow img {
   -webkit-animation: colorSwitch 2s ease-in-out alternate infinite;
           animation: colorSwitch 2s ease-in-out alternate infinite;
 }
-
 @-webkit-keyframes glower {
   0% {
     background-position: 0 0;
@@ -259,7 +199,6 @@ body #root .react-app .wrapper-glow img {
     background-position: 0 0;
   }
 }
-
 @keyframes glower {
   0% {
     background-position: 0 0;
@@ -271,6 +210,7 @@ body #root .react-app .wrapper-glow img {
     background-position: 0 0;
   }
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -297,25 +237,21 @@ body #root .react-app .wrapper-glow img {
 }
 
 >>>>>>> 49db72b64b1edf40269b15d0375e50fd9603a952
+=======
+>>>>>>> tester
 @-webkit-keyframes colorSwitch {
   from {
-    -webkit-filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
-            filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
+    filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
   }
   to {
-    -webkit-filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%);
-            filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%);
+    filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%);
   }
 }
-
 @keyframes colorSwitch {
   from {
-    -webkit-filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
-            filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
+    filter: sepia(100%) hue-rotate(170deg) brightness(100%) saturate(250%);
   }
   to {
-    -webkit-filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%);
-            filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%);
+    filter: sepia(100%) hue-rotate(25deg) brightness(100%) saturate(250%);
   }
-}
-/*# sourceMappingURL=App.css.map */
+}/*# sourceMappingURL=App.css.map */
